@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.12.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Pythonic Pandoc filters
 
 License:        BSD3
