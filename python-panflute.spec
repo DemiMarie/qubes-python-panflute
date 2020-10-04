@@ -22,18 +22,21 @@ creating Pandoc filters fun.
 Summary:        %{summary}
 %{?python_provide:%python_provide python%{python3_pkgversion}-%{pypi_name}}
 
-Requires:       python%{python3_pkgversion}-pandocfilters
 Requires:       python%{python3_pkgversion}-click
-Requires:       python%{python3_pkgversion}-configparser
 Requires:       python%{python3_pkgversion}-docutils
 Requires:       python%{python3_pkgversion}-pygments
-Requires:       python%{python3_pkgversion}-pytest-cov
 %if 0%{?fedora} < 26
 Requires:       python%{python3_pkgversion}-PyYAML
 %else
 Requires:       python%{python3_pkgversion}-pyyaml
 %endif
 Requires:       python%{python3_pkgversion}-setuptools
+
+# only needed for tests
+#Requires:       python%{python3_pkgversion}-pytest-cov
+#Requires:       python%{python3_pkgversion}-pandocfilters
+#Requires:       python%{python3_pkgversion}-configparser
+
 %description -n python%{python3_pkgversion}-%{pypi_name}
 Panflute: Pythonic Pandoc Filters is a Python package that makes
 creating Pandoc filters fun.
