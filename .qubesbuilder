@@ -1,0 +1,12 @@
+host:
+  rpm:
+    spec:
+    - python-panflute.spec
+vm:
+  rpm:
+    spec:
+    - python-panflute.spec
+source:
+  files:
+  - url: https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz
+    sha256: panflute-1.12.5.tar.gz.sha256
